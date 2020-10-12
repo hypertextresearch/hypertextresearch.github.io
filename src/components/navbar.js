@@ -29,15 +29,15 @@ function Navbar() {
               })
           }>
             <li className={styles.navItem}>
-              <Link to="/research" className={styles.navLinks}>Research</Link>
+              <Link to="#" className={styles.navLinks}>Research</Link>
             </li>
 
             <li className={styles.navItem}>
-              <Link to="/infra" className={styles.navLinks}>Infra</Link>
+              <Link to="#" className={styles.navLinks}>Infra</Link>
             </li>
 
             <li className={styles.navItem}>
-              <Link to="/about" className={styles.navLinks}>About</Link>
+              <Link to="#" className={styles.navLinks}>About</Link>
             </li>
           </ul>
         </div>
