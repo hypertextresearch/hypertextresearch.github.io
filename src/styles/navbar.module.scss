@@ -1,0 +1,89 @@
+$logofont: "Gelion", sans-serif;
+$logofontsize: 14pt;
+
+$headerfont: "IBM Plex Mono", monospace;
+$headerfontsize: 12pt;
+$headersize: 60px;
+
+.navbar {
+  text-transform: lowercase;
+  font-family: $headerfont;
+  font-size: $headerfontsize;
+
+  height: $headersize;
+}
+
+.navbarContainer {
+  // set widths and center
+  max-width: 900px;
+  min-width: 300px;
+  margin: 0 auto;
+  height: 100%;
+
+  // flexbox
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoContainer {
+  // fonts
+  font-family: $logofont;
+  font-size: $logofontsize;
+
+  // sizing
+  flex-basis: 100px;
+  flex-grow: 0;
+  flex-shrink: 1;
+
+  // flexbox
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  pointer-events: none;
+  margin-right: 10px;
+}
+
+.logoStyles {
+  fill: #ffffff;
+}
+
+.navMenu {
+  flex-grow: 0;
+  flex-basis: 50%;
+
+  // normalize list
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  // flexbox
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navItem {
+  font-family: $headerfont;
+}
+
+.navLinks {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navLinks:hover {
+  color: #ccc;
+  text-decoration: underline;
+}
+
+.active {
+
+}

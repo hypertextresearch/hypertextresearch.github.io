@@ -1,0 +1,41 @@
+$heromaxwidth: 1200px;
+
+.hero {
+  width: 100%;
+  overflow: hidden;
+}
+
+.heroContainer {
+  max-width: $heromaxwidth;
+  margin: auto;
+  position: relative;
+
+  height: unquote("calc(100vh - 60px)");
+}
+
+.map {
+  position: absolute;
+  max-width: $heromaxwidth;
+  width: 100%;
+  overflow: hidden;
+
+  z-index: -10;
+}
+
+.mainContent {
+  position: absolute;
+  top: 500px;
+  left: 100px;
+}
+
+.name {
+
+}
+
+.message {
+  margin-top: 5px;
+  color: #e2e2e0;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 24pt;
+  text-transform: lowercase;
+}
