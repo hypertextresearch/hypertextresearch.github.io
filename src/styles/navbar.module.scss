@@ -76,13 +76,28 @@ $headersize: 60px;
 }
 
 .navLinks {
+  position: relative;
   color: #ffffff;
   text-decoration: none;
 }
 
-.navLinks:hover {
-  color: #ccc;
-  text-decoration: underline;
+.navLinks::before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  height: 4px;
+  background: rgb(18,156, 217);
+  background: linear-gradient(90deg, rgba(42,90,181,1) 0%, rgba(18,156,217,1) 100%);
+  width: 0;
+  visibility: hidden;
+}
+
+.navLinks:hover::before {
+  content: "";
+  visibility: visible;
+  width: 100%;
+  transition: all 0.3s;
 }
 
 .active {
