@@ -11,7 +11,7 @@ function Hero() {
 
 
         <div className={styles.mainContent}>
-          <object type="image/svg+xml" data="/name-white.svg" className={styles.name}></object>
+          <object type="image/svg+xml" data="/name-offwhite.svg" className={styles.name}></object>
 
           <p className={styles.message}>Unlocking the secrets of intelligence</p>
         </div>

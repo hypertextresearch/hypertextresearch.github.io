@@ -15,7 +15,7 @@ function Navbar() {
         <div className={styles.navbarContainer}>
           <Link to="/" className={styles.logoContainer}>
             <object data="/logo-white.svg" className={styles.logo}></object>
-            Hypertext
+            <span className={styles.logoText}>Hypertext</span>
           </Link>
 
           {/* <div className="menu-icon" onClick={handleClick}>
@@ -37,7 +37,7 @@ function Navbar() {
             </li>
 
             <li className={styles.navItem}>
-              <Link to="#" className={styles.navLinks}>About</Link>
+              <Link to="/about" className={styles.navLinks}>About</Link>
             </li>
           </ul>
         </div>

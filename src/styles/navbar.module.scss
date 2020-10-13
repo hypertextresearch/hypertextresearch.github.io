@@ -1,14 +1,9 @@
-$logofont: "Gelion", sans-serif;
-$logofontsize: 20pt;
-
-$headerfont: "IBM Plex Mono", monospace;
-$headerfontsize: 12pt;
-$headersize: 80px;
+@import "./_variables.scss";
 
 .navbar {
   text-transform: lowercase;
   font-family: $headerfont;
-  font-size: $headerfontsize;
+  font-size: $bodyfontsize;
 
   height: $headersize;
 }
@@ -41,8 +36,28 @@ $headersize: 80px;
   align-items: center;
   cursor: pointer;
 
-  color: #fff;
+  color: #eee;
   text-decoration: none;
+  position: relative;
+}
+
+.logoContainer::before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 76px;
+  height: 4px;
+  background: rgb(18,156, 217);
+  background: linear-gradient(90deg, #0072ffff 0%, #19e0c9ff 100%);
+  width: 0;
+  visibility: hidden;
+}
+
+.logoContainer:hover::before {
+  content: "";
+  visibility: visible;
+  width: unquote("calc(100% - 76px)");
+  transition: all 0.3s;
 }
 
 .logo {
@@ -54,7 +69,7 @@ $headersize: 80px;
 }
 
 .logoStyles {
-  fill: #ffffff;
+  fill: #eee;
 }
 
 .navMenu {
@@ -73,12 +88,12 @@ $headersize: 80px;
 }
 
 .navItem {
-  font-family: $headerfont;
+  font-family: $bodyfont;
 }
 
 .navLinks {
   position: relative;
-  color: #ffffff;
+  color: #eee;
   text-decoration: none;
 }
 
