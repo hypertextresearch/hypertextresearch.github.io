@@ -1,10 +1,10 @@
 import { Link } from "gatsby"
 import React, { useState } from "react"
-import { FaBars, FaTimes } from "react-icons/fa"
 import classNames from "classnames"
 import styles from "../styles/navbar.module.scss"
+import logo from "../images/logo-white.svg"
 
-function Navbar() {
+const Navbar = () => {
   const [clicked, setClicked] = useState(false)
 
   const handleClick = () => setClicked(!clicked)
@@ -14,13 +14,9 @@ function Navbar() {
       <div className={styles.navbar}>
         <div className={styles.navbarContainer}>
           <Link to="/" className={styles.logoContainer}>
-            <object data="/logo-white.svg" className={styles.logo}></object>
+            <object data={logo} className={styles.logo}></object>
             <span className={styles.logoText}>Hypertext</span>
           </Link>
-
-          {/* <div className="menu-icon" onClick={handleClick}>
-            { clicked ? <FaTimes /> : <FaBars /> }
-          </div> */}
 
           <ul className={
             classNames(
