@@ -11,7 +11,7 @@ $heromaxwidth: 1200px;
   margin: auto;
   position: relative;
 
-  height: unquote("clamp(600px, calc(100vh - 60px), 900px)");
+  height: unquote("clamp(600px, calc(100vh - 80px), 900px)");
 }
 
 .map {
