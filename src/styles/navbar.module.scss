@@ -1,5 +1,5 @@
 $logofont: "Gelion", sans-serif;
-$logofontsize: 14pt;
+$logofontsize: 20pt;
 
 $headerfont: "IBM Plex Mono", monospace;
 $headerfontsize: 12pt;
@@ -65,6 +65,7 @@ $headersize: 60px;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  margin-top: 8px;
 
   // flexbox
   display: flex;
@@ -88,7 +89,7 @@ $headersize: 60px;
   left: 0;
   height: 4px;
   background: rgb(18,156, 217);
-  background: linear-gradient(90deg, rgba(42,90,181,1) 0%, rgba(18,156,217,1) 100%);
+  background: linear-gradient(90deg, #0072ffff 0%, #19e0c9ff 100%);
   width: 0;
   visibility: hidden;
 }
